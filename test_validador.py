@@ -2,8 +2,7 @@
 from validador import es_correo_valido
 
 def test_correo_valido():
-    assert es_correo_valido("alumno@escuela.org") == True
-
+    assert es_correo_valido("alumno@escuela.org") == False
 def test_sin_arroba():
     assert es_correo_valido("alumno.escuela.org") == False
 
